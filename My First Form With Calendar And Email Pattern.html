@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>My First Table With Calendar</title>
+</head>
+<!-- THIS FORM HAS THE RULES FOR SOME BASIC PATTERNS FOR EMAILS AND ID. ALSO HAS THE HTML ENTITY TO SPACE BUTTONS HORIZONTALY WITH A PRESET AMOUNT OF PIXELS (&nbsp;)-->
+<body>
+	<form action="/data-processing-page" method="post">
+		<fieldset>
+			<legend>Personal Information</legend>
+			<label for="name">Name:</label>
+			<input type="text" minlength="3" id="name" placeholder="Your Name Here" required>
+			<label for="email">E-Mail:</label>
+			<input type="text" id="email" minlength="4" pattern="[^@\s]+@[^@\s]+\.[^@\s]" placeholder="Your Email Here" required>
+			<label for="phone-number">Phone Number:</label>
+			<input type="text" id="phone-number" minlength="9" pattern="[0-9]{2}\.[0-9]{3}\.[0-9]{3}-[0-9]{1}" placeholder="Your Phone Number Here" required>
+			<label for="date-of-birth">Birthday:</label>
+			<input type="date" id="date-of-birth" required>
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>Leave Us A Message:</legend>
+			<label for="user-message"></label>
+			<textarea id="user-message" placeholder="Type Here" required></textarea>
+		</fieldset>
+		<br>
+		<button type="submit">Send Form</button>&nbsp;<button type="Reset">Reset Form</button>
+	</form>
+</body>
