@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My First Pseudo Class</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		/* TIS BLOCK BELOW IS USING A PSEUDO ELEMENT CALLED ::FIRST-LETTER */
+		#new-font-hobbit:hover::first-letter {
+			font-size: 150px; color: #14E5F3;
+			background-color: #89210B;
+		}
+		#new-font-hobbit:hover { 
+			background-color: #89210B;
+			color: ghostwhite;
+		}
+
+		.all-the-headers:hover {background-color: #EFAFA1; color: ghostwhite;}
+
+	</style>
+</head>
+<body>
+	<h1 class="all-the-headers">Using Pseudo Classes</h1>
+	<p id="new-font-hobbit">
+		In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to eat: it was a hobbit-hole, and that means comfort.
+	</p>
+</body>
+</html>
